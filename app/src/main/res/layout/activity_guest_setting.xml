@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20px"
+    tools:context="com.sineva.rosapidemo.activity.GuideSettingActivity">
+
+    <com.sineva.rosapidemo.view.ToolbarControl
+        android:id="@+id/toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:gravity="center"
+        app:titleText="@string/guest_scene_setting"/>
+    <!-- 分割线 -->
+    <View style="@style/bg_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="270px"
+            android:layout_height="match_parent"
+            android:layout_margin="20px"
+            android:background="@drawable/bg_layout_shape"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_guest_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_add_guide"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="50px"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:src="@drawable/icon_add" />
+
+                <ImageView
+                    android:id="@+id/btn_del_guide"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:src="@drawable/icon_del" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20px"
+            android:layout_weight="3"
+            android:background="@drawable/bg_layout_shape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10px"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/scene_name"
+                            android:textSize="36px" />
+
+                        <EditText
+                            android:id="@+id/et_scene"
+                            android:layout_width="180px"
+                            android:layout_height="60px"
+                            android:background="@drawable/edit_shape"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="@string/interval_time"
+                            android:textSize="36px" />
+
+
+                        <EditText
+                            android:id="@+id/et_space_time"
+                            android:layout_width="130px"
+                            android:layout_height="60px"
+                            android:background="@drawable/edit_shape"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="52px"
+                            android:layout_height="70px"
+                            android:gravity="center"
+                            android:text="@string/interval_time_unit"
+                            android:textSize="36px" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cb_default_scene"
+                        style="@style/style_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="47px"
+                        android:layout_marginTop="40px"
+                        android:gravity="center"
+                        android:text="@string/default_scene"
+                        android:textSize="36px" />
+                    <!--<CheckBox
+                        android:id="@+id/cb_can_charge"
+                        android:text="智能充电"
+                        android:textSize="36px"
+                        android:gravity="center"
+                        android:layout_margin="10px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20px">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/begin_time"
+                            android:textSize="36px" />
+
+                        <EditText
+                            android:id="@+id/et_begin_time"
+                            android:layout_width="180px"
+                            android:layout_height="60px"
+                            android:background="@drawable/edit_shape" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/loop_time"
+                            android:textSize="36px" />
+
+                        <EditText
+                            android:id="@+id/et_cycle_times"
+                            android:layout_width="130px"
+                            android:layout_height="60px"
+                            android:background="@drawable/edit_shape"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="52px"
+                            android:layout_height="70px"
+                            android:gravity="center"
+                            android:text="@string/loop_time_unit"
+                            android:textSize="36px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/trigger_word"
+                            android:textSize="36px" />
+
+                        <EditText
+                            android:id="@+id/et_trigger_word"
+                            android:layout_width="180px"
+                            android:layout_height="60px"
+                            android:background="@drawable/edit_shape"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="30px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:gravity="left"
+                    android:text="@string/sports_files"
+                    android:textSize="36px" />
+
+                <Button
+                    android:id="@+id/btn_move_photo"
+                    style="@style/btn_option"
+                    android:layout_margin="10px"
+                    android:text="@string/image"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/btn_move_music"
+                    style="@style/btn_option"
+                    android:layout_margin="10px"
+                    android:text="@string/music"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/btn_move_video"
+                    style="@style/btn_option"
+                    android:layout_margin="10px"
+                    android:text="@string/video"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/btn_move_play"
+                    style="@style/btn_option"
+                    android:layout_margin="10px"
+                    android:text="@string/preview"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:text="@string/select_map"
+                    android:textSize="36px" />
+
+                <EditText
+                    android:id="@+id/sp_select_map"
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="36px" />
+
+                <Button
+                    android:id="@+id/btn_preview"
+                    android:layout_width="136px"
+                    android:layout_height="60px"
+                    android:gravity="center"
+                    android:text="@string/preview"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:text="@string/play_content"
+                android:textSize="36px" />
+
+            <EditText
+                android:id="@+id/et_target_word"
+                android:layout_width="560px"
+                android:layout_height="182px"
+                android:layout_marginLeft="180px"
+                android:layout_marginTop="-50px"
+                android:background="@drawable/edit_shape"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:minLines="6" />
+
+            <Button
+                android:id="@+id/btn_point_play"
+                style="@style/btn_option"
+                android:layout_gravity="right"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="24px"
+                android:text="@string/audition"
+                android:textSize="30px" />
+
+            <View
+                style="@style/bg_line"
+                android:layout_marginTop="24px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_question"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="30px"
+                            android:clickable="true"
+                            android:src="@drawable/icon_question" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/guest_point_order_set"
+                            android:textSize="36px" />
+
+                        <ImageView
+                            android:id="@+id/img_add"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="30px"
+                            android:clickable="true"
+                            android:src="@drawable/icon_add_img" />
+
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/lv_guest_point_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </ListView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_cancle"
+                            android:layout_width="160px"
+                            android:layout_height="86px"
+                            android:layout_marginRight="150px"
+                            android:gravity="center"
+                            android:text="@string/cancle"
+                            android:textSize="36px" />
+
+                        <Button
+                            android:id="@+id/btn_confirm"
+                            android:layout_width="160px"
+                            android:layout_height="86px"
+                            android:gravity="center"
+                            android:text="@string/confirm"
+                            android:textSize="36px" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/bg_line"
+        />
+
+</LinearLayout>

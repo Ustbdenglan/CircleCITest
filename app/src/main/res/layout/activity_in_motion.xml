@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    tools:context="com.sineva.rosapidemo.activity.InMotionActivity">
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:src="@drawable/robot_bg2"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mileage_info"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:text="@string/mileage_info"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_move_speed_info"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:text="@string/move_speed_info"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_ultrasonic_info"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:text="@string/ultrasonic_info"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_distance_info"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:text="@string/distance_info"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_start"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_start"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="36px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/wake_up"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/img_btn_200px"
+                android:src="@drawable/icon_wake_up" />
+
+            <TextView
+                android:id="@+id/tv_wake_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:gravity="center"
+                android:text="@string/voice"
+                android:textSize="72px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/handle"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/img_btn_200px"
+                android:src="@drawable/icon_handle" />
+
+            <TextView
+                android:id="@+id/tv_handle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:gravity="center"
+                android:text="@string/handle"
+                android:textSize="72px" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20px"
+    tools:context="com.sineva.rosapidemo.activity.GuideSettingActivity">
+
+    <com.sineva.rosapidemo.view.ToolbarControl
+        android:id="@+id/toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:gravity="center"
+        app:titleText="@string/ask_question_setting"></com.sineva.rosapidemo.view.ToolbarControl>
+    <!-- 分割线 -->
+    <View
+        style="@style/bg_line"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10px"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_question_list"
+            android:layout_width="190px"
+            android:layout_height="match_parent"
+            android:layout_margin="20px"
+            android:background="@drawable/bg_layout_shape">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:background="@drawable/bg_layout_shape"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="80px"
+                    android:layout_height="70px"
+                    android:text="@string/name"
+                    android:layout_marginRight="60px"
+                    android:gravity="center"
+                    android:textSize="36px" />
+
+                <EditText
+                    android:id="@+id/et_question_name"
+                    android:layout_width="590px"
+                    android:layout_height="60px"
+                    android:layout_marginRight="70px"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="end"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="109px"
+                    android:layout_height="70px"
+                    android:layout_marginRight="31px"
+                    android:text="@string/keyword"
+                    android:gravity="center"
+                    android:textSize="36px" />
+
+                <EditText
+                    android:id="@+id/et_key_world"
+                    android:layout_width="590px"
+                    android:layout_height="60px"
+                    android:layout_marginRight="70px"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="end"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:text="@string/begin_voice_word"
+                android:textSize="38px" />
+
+            <EditText
+                android:id="@+id/et_begin_word"
+                android:layout_width="590px"
+                android:layout_height="240px"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="136px"
+                android:layout_marginRight="70px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/edit_shape"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:minLines="6" />
+
+            <Button
+                android:id="@+id/btn_begin_play"
+                android:layout_width="90px"
+                android:layout_height="60px"
+                android:layout_gravity="right"
+                android:layout_marginRight="80px"
+                android:layout_marginTop="20px"
+                android:text="@string/audition"
+                android:textSize="30px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="217px"
+                    android:layout_height="60px"
+                    android:layout_marginRight="10px"
+                    android:gravity="center"
+                    android:text="@string/begin_sport_files"
+                    android:textSize="36px" />
+
+                <Button
+                    android:id="@+id/btn_move_photo"
+                    style="@style/btn_option"
+                    android:layout_margin="20px"
+                    android:text="@string/image"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/btn_move_music"
+                    style="@style/btn_option"
+                    android:text="@string/music"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/btn_move_video"
+                    android:layout_marginLeft="20px"
+                    style="@style/btn_option"
+                    android:text="@string/video"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/btn_move_play"
+                    android:layout_marginLeft="20px"
+                    style="@style/btn_option"
+                    android:text="@string/preview"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110px"
+                    android:layout_height="60px"
+                    android:layout_marginRight="20px"
+                    android:gravity="center"
+                    android:text="@string/points"
+                    android:textSize="36px" />
+
+                <Spinner
+                    android:id="@+id/px_path_point"
+                    android:layout_width="120px"
+                    android:layout_height="60px"
+                    android:background="@drawable/edit_shape" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="70px"
+                    android:layout_marginRight="36px"
+                    android:gravity="center"
+                    android:text="@string/moving_head_angle"
+                    android:textSize="36px" />
+
+                <Spinner
+                    android:id="@+id/px_move_head_angle"
+                    android:layout_width="120px"
+                    android:layout_height="60px"
+                    android:background="@drawable/edit_shape" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:text="@string/target_voice_word"
+                android:textSize="36px" />
+
+            <EditText
+                android:id="@+id/et_target_word"
+                android:layout_width="580px"
+                android:layout_height="240px"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="136px"
+                android:layout_marginRight="90px"
+                android:background="@drawable/edit_shape"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:minLines="6" />
+
+            <Button
+                android:id="@+id/btn_point_play"
+                android:layout_width="90px"
+                android:layout_height="60px"
+                android:layout_gravity="right"
+                android:layout_marginRight="80px"
+                android:text="@string/audition"
+                android:textSize="30px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10px"
+                    android:gravity="left"
+                    android:text="@string/target_point_files"
+                    android:textSize="36px" />
+
+                <Button
+                    android:id="@+id/btn_target_photo"
+                    style="@style/btn_option"
+                    android:layout_margin="20px"
+                    android:text="@string/image"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/btn_target_music"
+                    style="@style/btn_option"
+                    android:text="@string/music"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/btn_target_video"
+                    style="@style/btn_option"
+                    android:layout_margin="20px"
+                    android:text="@string/video"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/btn_target_play"
+                    style="@style/btn_option"
+                    android:text="@string/preview"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_gravity="bottom"
+                android:layout_margin="20px"
+                android:layout_marginBottom="50px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancle"
+                    android:layout_width="160px"
+                    android:layout_height="64px"
+                    android:layout_marginRight="180px"
+                    android:gravity="center"
+                    android:text="@string/cancle"
+                    android:textSize="36px" />
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="160px"
+                    android:layout_height="64px"
+                    android:gravity="center"
+                    android:text="@string/confirm"
+                    android:textSize="36px" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

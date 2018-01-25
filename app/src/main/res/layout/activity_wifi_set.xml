@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fdfdfd"
+    android:layout_marginTop="20px"
+    >
+    <com.sineva.rosapidemo.view.ToolbarControl
+        android:id="@+id/toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        app:titleText="@string/wifi_setting"
+        android:gravity="center"
+        >
+    </com.sineva.rosapidemo.view.ToolbarControl>
+    <View style="@style/bg_line" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="124px"
+        android:gravity="center_vertical"
+        >
+        <TextView
+
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="@string/wireless_network"
+            android:textSize="44px"
+            android:layout_marginLeft="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.sineva.rosapidemo.view.SwitchButton
+            android:id="@+id/sb_devmode"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sb_show_indicator="false"
+            android:layout_marginRight="50px"
+            app:sb_checked="false"/>
+
+    </RelativeLayout>
+    <TextView
+        android:text="@string/select_network"
+        android:textSize="44px"
+        android:paddingLeft="28px"
+        android:layout_margin="20px"
+        android:gravity="center_vertical"
+        android:background="#BEC2CB"
+        android:layout_width="match_parent"
+        android:layout_height="80px" />
+    <ListView
+        android:id="@+id/lv_wifi_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>

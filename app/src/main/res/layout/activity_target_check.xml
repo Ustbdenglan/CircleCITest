@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+android:layout_marginTop="20px"
+    >
+    <com.sineva.rosapidemo.view.ToolbarControl
+        android:id="@+id/toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        app:titleText="@string/charge_check"
+        android:gravity="center"
+        >
+    </com.sineva.rosapidemo.view.ToolbarControl>
+    <View style="@style/bg_line"/>
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_margin="60px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_ting_bulb"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_check"
+            />
+        <TextView
+            android:text="@string/thing"
+            android:textSize="48px"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/img_people_bulb"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_check"
+            />
+        <TextView
+            android:text="@string/people"
+            android:textSize="48px"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="@string/distance"
+                android:textSize="44px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="m"
+                android:textSize="45px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/img_target_check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg_color"
+    android:orientation="vertical"
+    android:layout_marginTop="20px"
+    tools:context="com.sineva.rosapidemo.activity.SettingActivity">
+
+    <com.sineva.rosapidemo.view.ToolbarControl
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:gravity="center"
+        app:titleText="@string/setting"></com.sineva.rosapidemo.view.ToolbarControl>
+
+    <View style="@style/bg_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="528px"
+        android:layout_marginLeft="119px"
+        android:layout_marginRight="120px"
+        android:layout_marginTop="118px">
+
+        <LinearLayout
+            android:id="@+id/lin_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/img_btn_160px"
+                android:src="@drawable/icon_guide" />
+
+            <TextView
+                style="@style/setting_textSize"
+                android:gravity="center"
+                android:text="@string/guide_scene_setting"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/img_btn_160px"
+                android:src="@drawable/icon_guest" />
+
+            <TextView
+                style="@style/setting_textSize"
+                android:gravity="center"
+                android:text="@string/guest_scene_setting"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/img_btn_160px"
+                android:src="@drawable/icon_map" />
+
+            <TextView
+                style="@style/setting_textSize"
+                android:gravity="center"
+                android:text="@string/map_setting"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_basic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/img_btn_160px"
+                android:src="@drawable/icon_basic_setting" />
+
+            <TextView
+                style="@style/setting_textSize"
+                android:gravity="center"
+                android:text="@string/base_setting"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_aq"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/img_btn_160px"
+                android:src="@drawable/icon_question_setting" />
+
+            <TextView
+                style="@style/setting_textSize"
+                android:gravity="center"
+                android:text="@string/ask_question_setting" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

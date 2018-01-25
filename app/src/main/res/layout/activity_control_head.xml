@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_nodes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20px"
+    android:orientation="vertical">
+
+    <com.sineva.rosapidemo.view.ToolbarControl
+        android:id="@+id/toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:gravity="center"
+        app:titleText="@string/head_control"></com.sineva.rosapidemo.view.ToolbarControl>
+
+    <View
+        style="@style/bg_line"
+        android:layout_marginBottom="20px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="154px">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/up_down_speed"
+            android:textColor="#000"
+            android:textSize="48px" />
+
+        <SeekBar
+            android:id="@+id/sb_vertical_speed"
+            style="@style/jrt_seekbar_style"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:maxHeight="3px"
+            android:progress="50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="42px">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/right_left_speed"
+            android:textColor="#000"
+            android:textSize="48px" />
+
+        <SeekBar
+            android:id="@+id/sb_horizontal_speed"
+            style="@style/jrt_seekbar_style"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:maxHeight="3px"
+            android:progress="50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_forward"
+            style="@style/img_btn_160px"
+            android:layout_marginLeft="460px"
+            android:layout_marginTop="154px"
+            android:background="@drawable/up_button_selector" />
+
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            style="@style/img_btn_160px"
+            android:layout_marginLeft="92px"
+            android:layout_marginTop="200px"
+            android:background="@drawable/left_button_selector" />
+
+        <ImageButton
+            android:id="@+id/btn_right"
+            style="@style/img_btn_160px"
+            android:layout_marginLeft="829px"
+            android:layout_marginTop="-160px"
+            android:background="@drawable/right_button_selector" />
+
+        <ImageButton
+            android:id="@+id/btn_backward"
+            style="@style/img_btn_160px"
+            android:layout_marginTop="200px"
+            android:layout_marginLeft="450px"
+            android:background="@drawable/down_button_selector" />
+    </LinearLayout>
+
+</LinearLayout>

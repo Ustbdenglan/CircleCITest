@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20px"
+    tools:context="com.sineva.rosapidemo.activity.Handle2Activity">
+
+    <com.sineva.rosapidemo.view.ToolbarControl
+        android:id="@+id/toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:gravity="center"
+        app:titleText="@string/handle"></com.sineva.rosapidemo.view.ToolbarControl>
+
+    <View
+        android:id="@+id/line"
+        style="@style/bg_line"
+        android:layout_below="@+id/toorbar"
+        android:layout_marginBottom="20px" />
+
+    <LinearLayout
+        android:id="@+id/nine_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="120px"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/lin_voice_reset"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="135px"
+                    android:layout_height="135px"
+                    android:src="@drawable/icon_wake_up" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:gravity="center"
+                    android:text="@string/voice_reset"
+                    android:textSize="56px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_stop"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="135px"
+                    android:layout_height="135px"
+                    android:src="@drawable/icon_stop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:gravity="center"
+                    android:text="@string/stop"
+                    android:textSize="56px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_head_control"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="135px"
+                    android:layout_height="135px"
+                    android:src="@drawable/icon_head" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:gravity="center"
+                    android:text="@string/head_control"
+                    android:textSize="56px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="120px"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/lin_map_display"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="135px"
+                    android:layout_height="135px"
+                    android:src="@drawable/icon_map" />
+
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:gravity="center"
+                    android:text="@string/map_display"
+                    android:textSize="56px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_shutdown"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="135px"
+                    android:layout_height="135px"
+                    android:src="@drawable/icon_shutdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:gravity="center"
+                    android:text="@string/shutdown"
+                    android:textSize="56px" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

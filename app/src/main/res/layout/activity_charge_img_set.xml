@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+    android:layout_marginTop="20px"
+    >
+    <com.sineva.rosapidemo.view.ToolbarControl
+        android:id="@+id/toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        app:titleText="@string/self_charge_setting"
+        android:gravity="center"
+        >
+    </com.sineva.rosapidemo.view.ToolbarControl>
+    <View style="@style/bg_line"/>
+    <Button
+        android:id="@+id/btn_chargeing"
+        android:text="@string/chargeing"
+        style="@style/btn_charge"
+        />
+    <Button
+        android:id="@+id/btn_charged"
+        android:text="@string/full_charged"
+        style="@style/btn_charge"
+       />
+    <Button
+        android:id="@+id/btn_charge_faliure"
+        android:text="@string/charge_faliure"
+        style="@style/btn_charge"
+        />
+
+
+</LinearLayout>
