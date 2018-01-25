@@ -12,12 +12,7 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-ext {
-    compileSdkVersion = 26
-    buildToolsVersion = "26.0.1"
-    minSdkVersion = 14
-    targetSdkVersion = 22 //23需要特殊处理动态授权
-}
+
 
 allprojects {
     repositories {
