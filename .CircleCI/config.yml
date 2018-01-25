@@ -8,6 +8,9 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
+      - tools
+      - platform-tools 
+       
        # The BuildTools version used by your project
       - build-tools-26.0.2
 
