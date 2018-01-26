@@ -15,3 +15,10 @@ jobs:
       - checkout
 
       - run: bundle install
+      
+      
+workflows:
+  version: 2
+    jobs:
+      - build
+ 
