@@ -33,7 +33,7 @@ dependencies {
     })
     compile project(':rosapilibrary')
     compile 'com.android.support:appcompat-v7:26.+'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    //compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.jakewharton:butterknife:8.4.0'
     compile 'com.orhanobut:logger:1.15'
     compile 'org.litepal.android:core:1.6.1'
