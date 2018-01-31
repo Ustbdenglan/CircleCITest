@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/android:api-27-node8-alpha
+      - image: circleci/android-image
       
     working_directory: ~/repo
     steps:
