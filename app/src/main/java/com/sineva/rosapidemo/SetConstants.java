@@ -7,6 +7,5 @@ package com.sineva.rosapidemo;
 
 public class SetConstants {
     public static final String IS_DEV_MODE="is_dev_mode";
-    public static final String IS_DEV_MODE="is_dev_mode"；
     public static final String IS_WIFI_OPEN="is_wifi_open";
 }
